@@ -17,7 +17,7 @@ const EditUser = () => {
   const updateUser = async (e) => {
     e.preventDefault();
     try {
-      await axios.patch(`${BASE_URL}/notes/${id}`, {
+      await axios.patch(`${BASE_URL}/users/${id}`, {
         name,
         judul,
         catatan,
